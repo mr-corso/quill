@@ -29,17 +29,7 @@
     "sweetalert": "^2.1.2",
     "underscore": "^1.9.1",
     "validator": "^10.10.0",
-    "vinyl-source-stream": "^2.0.0"
-  },
-  "scripts": {
-    "mongo": "mongod --dbpath db",
-    "start": "gulp build && node app.js",
-    "dev": "nodemon app.js",
-    "watch": "gulp server",
-    "prod": "gulp build && node app.js",
-    "config": "cp .env.config .env"
-  },
-  "devDependencies": {
+    "vinyl-source-stream": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
@@ -49,6 +39,14 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "mongo": "mongod --dbpath db",
+    "start": "gulp build && node app.js",
+    "dev": "nodemon app.js",
+    "watch": "gulp server",
+    "prod": "gulp build && node app.js",
+    "config": "cp .env.config .env"
   },
   "engines": {
     "node": "10.14.1"
